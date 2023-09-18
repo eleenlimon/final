@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Django Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_dash1.css' %}">
+</head>
+<body id='bg' style="background-image: url('{% static 'img/dash1.jpg' %}')">
+    <div class="container">
+        <div class="row">
+            <div class="header">
+                <h1>Django Projects!!</h1>
+                <p> insert text here like sub heading</p>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <img src="{% static 'img/todo.png' %}">
+                    <h4> Porject one</h4>
+                    <a href="{% url 'task_create' %}">&#x2b;</a>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/sand.jpg' %}">
+                    <h4> Porject one</h4>
+                    <p>Summary of project</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/sand.jpg' %}">
+                    <h4> Porject one</h4>
+                    <p>Summary of project</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/sand.jpg' %}">
+                    <h4> Porject one</h4>
+                    <p>Summary of project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

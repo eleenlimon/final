@@ -1,0 +1,158 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="{% static 'css/style2_dash2.css' %}"
+          rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="https://github.com/eleenlimon" class="github-corner" aria-label="View source on GitHub">
+    <svg width="100" height="100" viewBox="0 0 250 250"
+         style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+<style>
+    .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+</style>
+<div class="sidebar-wrapper">
+    <div class="header"><a href="/" aria-current="page" class="site-name w--current">Django Projects</a>
+        <div class="grey-rule w-hidden-small w-hidden-tiny"></div>
+        <p class="site-description">Welcome to my portfolio of Django projects!
+            These projects collectively exemplify my deep understanding of Python for backend development, Django for
+            creating robust web applications, HTML & CSS for crafting user-friendly interfaces, with the use of
+            Tailwind CSS for modern and responsive styling.</p>
+        <div class="grey-rule w-hidden-small w-hidden-tiny"></div>
+        <nav class="navigation"><a href="/" aria-current="page" class="nav-link w--current">home</a><a href="http://eleenlimon.pythonanywhere.com/index.html"
+                                                                                                       class="nav-link">about</a><a
+                href="http://eleenlimon.pythonanywhere.com/index.html" class="nav-link">contact</a>
+            <div class="grey-rule w-hidden-small w-hidden-tiny"></div>
+        </nav>
+        <div class="social-link-group"><a href="https://www.linkedin.com/in/eleen-limon-84a466207" class="social-icon-link w-inline-block"><img
+                src="https://uploads-ssl.webflow.com/65020b6a58ba8010f0a7b5ce/65020b6b58ba8010f0a7b91d_social-09.svg"
+                width="50" alt=""/></a><a></a></div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="w-dyn-list">
+        <div role="list" class="w-dyn-items">
+            <div role="listitem" class="w-dyn-item">
+                <div class="post-wrapper"><a href="{% url 'trip-home' %}"
+                                             style="background-image:url('{% static 'img/travel.jpg' %}')"
+                                             class="blog-image w-inline-block"></a>
+                    <div class="post-content"><a href="{% url 'trip-home' %}"
+                                                 class="blog-title-link w-inline-block"><h1 class="blog-title">
+                        JourneyLog 📌: Your Personal Travel Journal and Note-Taking App</h1></a>
+                        <div class="post-summary-wrapper"><p class="post-summary">JourneyLog📌,  lets users document
+                            their trips, take notes, and perform CRUD operations (Create, Read, Update, Delete). It
+                            includes user registration for personalized experiences. With enhanced design using
+                            Tailwind CSS for a sleek and responsive user interface. The backend features consist of
+                            Django models for data storage, user authentication, and sessions for security, ensuring a
+                            seamless user experience.
+                            </p></div>
+                        <div class="post-info-wrapper">
+                            <div class="post-info">September 1, 2023</div>
+                            <div class="post-info">|</div>
+                            <a class="post-info link">Travel</a></div>
+                        <div class="button1"><a href="{% url 'trip-home' %}"> View Project →</a></div>
+                    </div>
+                </div>
+            </div>
+            <div role="listitem" class="w-dyn-item">
+                <div class="post-wrapper"><a
+                        href="{% url 'link-list' %}"
+                        style="background-image:url('{% static 'img/plant.jpg' %}')"
+                        class="blog-image w-inline-block"></a>
+                    <div class="post-content"><a
+                            href="{% url 'link-list' %}"
+                            class="blog-title-link w-inline-block"><h1 class="blog-title">LinkPlant 🪴: Organize and Share
+                        Your Online World</h1></a>
+                        <div class="post-summary-wrapper"><p class="post-summary"> LinkHub, enables users
+                            to create personalized link collections for sharing. Built using Django, we leverage its
+                            backend features to manage user accounts, link storage, and dynamic routing. Similar to
+                            Linktree, users can organize and share their various online profiles, articles, and content
+                            with a single, customizable link.</p></div>
+                        <div class="post-info-wrapper">
+                            <div class="post-info">August 28, 2023</div>
+                            <div class="post-info">|</div>
+                            <a class="post-info link">Tech</a></div>
+                        <div class="button1"><a href="{% url 'link-list' %}"> View Project →</a></div>
+                    </div>
+                </div>
+            </div>
+            <div role="listitem" class="w-dyn-item">
+                <div class="post-wrapper"><a href="{% url 'register-todo' %}"
+                                             style="background-image:url('{% static 'img/plan.jpg' %}')"
+                                             class="blog-image w-inline-block"></a>
+                    <div class="post-content"><a href="{% url 'register-todo' %}"
+                                                 class="blog-title-link w-inline-block"><h1 class="blog-title">To-Do App </h1></a>
+                        <div class="post-summary-wrapper"><p class="post-summary">The To Do App, developed offers a
+                            user-friendly and personalized task management
+                            experience. Each user has their own account, allowing them to create, read, update, and
+                            delete (CRUD) tasks effortlessly. The app provides a clean and intuitive interface where
+                            users can input task details, including dates, completion status, and descriptions, and
+                            easily search through their to-do lists for efficient task management.</p>
+                        </div>
+                        <div class="post-info-wrapper">
+                            <div class="post-info">September 13, 2023</div>
+                            <div class="post-info">|</div>
+                            <a class="post-info link">Organize</a></div>
+                        <div class="button1"><a href="{% url 'register-todo' %}"> View Project →</a></div>
+                    </div>
+                </div>
+            </div>
+            <div role="listitem" class="w-dyn-item">
+                <div class="post-wrapper"><a href="{% url 'shortlink' %}"
+                                             style="background-image:url('{% static 'img/short.jpg' %}')"
+                                             class="blog-image w-inline-block"></a>
+                    <div class="post-content"><a href="{% url 'shortlink' %}"
+                                                 class="blog-title-link w-inline-block"><h1 class="blog-title">ShortLink ✄</h1></a>
+                        <div class="post-summary-wrapper"><p class="post-summary">ShortLink provides users with a
+                            streamlined way to create and
+                            manage shortened URLs, much like Bitly. ShortLink
+                            empowers users to input lengthy web addresses and receive concise and user-friendly short
+                            links that are easier to share and remember. The application's clean interface and intuitive
+                            design make it effortless for users to generate, track, and share these shortened URLs,
+                            enhancing the accessibility and convenience of web links.</p></div>
+                        <div class="post-info-wrapper">
+                            <div class="post-info">August 10, 2023</div>
+                            <div class="post-info">|</div>
+                            <a class="post-info link">Tech</a></div>
+                        <div class="button1"><a href="{% url 'shortlink' %}"> View Project →</a></div>
+                    </div>
+                </div>
+            </div>
+            <div role="listitem" class="w-dyn-item">
+                <div class="post-wrapper"><a href="{% url 'job_board' %}"
+                                             style="background-image: url('{% static 'img/work.jpg' %}')"
+                                             class="blog-image w-inline-block"></a>
+                    <div class="post-content"><a href="{% url 'job_board' %}"
+                                                 class="blog-title-link w-inline-block"><h1 class="blog-title">💼 ActiveHire</h1></a>
+                        <div class="post-summary-wrapper"><p class="post-summary">ActiveHire is a straightforward web
+                            application dedicated to simplifying the job search process. It exclusively lists active job
+                            postings, ensuring users only see relevant
+                            opportunities. Users can easily navigate through the available job listings and click on any
+                            job title to view its detailed description.
+                        </p></div>
+                        <div class="post-info-wrapper">
+                            <div class="post-info">August 2, 2023</div>
+                            <div class="post-info">|</div>
+                            <a class="post-info link">Jobs</a></div>
+                        <div class="button1"><a href="{% url 'job_board' %}"> View Project →</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div><a href='#' class="stt" title="scroll to top"></a> </div>
+</div>
+</body>
