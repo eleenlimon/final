@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-&xo3*mrhd#jiwnhv(nphktvgh&91s&s1)5^+554&0v09%f^!(-
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/"]
 
 # Application definition
 
