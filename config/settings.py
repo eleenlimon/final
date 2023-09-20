@@ -71,10 +71,12 @@ MIDDLEWARE = [
 ALLOWED_ORIGINS = [
     "https://limondjango.up.railway.app/",
     "https://www.limondjango.up.railway.app/",
+    "http://limondjango.up.railway.app/",
 ]
 
-if not DEBUG:
-    CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
+CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 ROOT_URLCONF = "config.urls"
 
