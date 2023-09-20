@@ -68,14 +68,6 @@ MIDDLEWARE = [
 
 CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/", "http://limondjango.up.railway.app/"]
 
-"""ALLOWED_ORIGINS = [
-    "https://limondjango.up.railway.app/",
-    "https://www.limondjango.up.railway.app/",
-    "http://limondjango.up.railway.app/",
-]
-
-CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()"""
-
 SESSION_COOKIE_SECURE = True
 
 CSRF_COOKIE_SECURE = True
