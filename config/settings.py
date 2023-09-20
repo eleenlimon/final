@@ -71,6 +71,7 @@ CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/", "https://www.limo
 CORS_ALLOWED_ORIGINS = [
     "https://limondjango.up.railway.app/",
     "https://www.limondjango.up.railway.app/",
+    "https://limondjango.up.railway.app/link_plant/link/create/",
 
 ]
 
