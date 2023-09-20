@@ -66,7 +66,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/", "http://limondjango.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app", "http://limondjango.up.railway.app"]
 
 SESSION_COOKIE_SECURE = True
 
