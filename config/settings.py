@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "nl^oz60!-yzqmz67t*&_5l0n9ec8s--4%b_9f9814b23$3%=nt"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["limondjango.up.railway.app"]
 
