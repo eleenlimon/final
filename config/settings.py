@@ -66,7 +66,13 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/", "https://www.limondjango.up.railway.app/",]
+CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/", "https://www.limondjango.up.railway.app/"]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://limondjango.up.railway.app/",
+    "https://www.limondjango.up.railway.app/",
+
+]
 
 
 ROOT_URLCONF = "config.urls"
