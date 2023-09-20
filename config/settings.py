@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-&xo3*mrhd#jiwnhv(nphktvgh&91s&s1)5^+554&0v09%f^!(-"
+SECRET_KEY = "nl^oz60!-yzqmz67t*&_5l0n9ec8s--4%b_9f9814b23$3%=nt"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -68,14 +68,16 @@ MIDDLEWARE = [
 
 CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/", "http://limondjango.up.railway.app/"]
 
-""""ALLOWED_ORIGINS = [
+"""ALLOWED_ORIGINS = [
     "https://limondjango.up.railway.app/",
     "https://www.limondjango.up.railway.app/",
     "http://limondjango.up.railway.app/",
 ]
 
-CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()""""
+CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()"""
+
 SESSION_COOKIE_SECURE = True
+
 CSRF_COOKIE_SECURE = True
 
 ROOT_URLCONF = "config.urls"
