@@ -73,7 +73,8 @@ ALLOWED_ORIGINS = [
     "https://www.limondjango.up.railway.app/",
 ]
 
-CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
+if not DEBUG:
+    CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
 
 ROOT_URLCONF = "config.urls"
 
