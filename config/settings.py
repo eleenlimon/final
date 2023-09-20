@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.humanize",
+    "corsheaders",
 
     # local apps
     'job_board',
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -64,7 +66,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/", "https://www.limondjango.up.railway.app/", "https://limondjango.up.railway.app/link_plant/link/create/" ]
+CSRF_TRUSTED_ORIGINS = ["https://limondjango.up.railway.app/", "https://www.limondjango.up.railway.app/",]
 
 
 ROOT_URLCONF = "config.urls"
